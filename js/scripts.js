@@ -29,5 +29,9 @@ $(document).ready(function () {
     e.preventDefault();
     const inputtedSize = $("select#size").val();
     const inputtedTopping = $("checkbox.topping");
-  })
-})
+    const totalCost = myPizza.sizeCost + myPizza.toppingCost;
+    let myPizza = new Pizza(inputtedSize, inputtedTopping, totalCost);
+    myPizza.toppingCost();
+    $("#total-cost").html(myPizza.price);
+  });
+});
