@@ -1,4 +1,5 @@
 //Business Logic
+
 function Pizza(size, topping) {
   this.size = size;
   this.topping = topping;
@@ -21,4 +22,12 @@ Pizza.prototype.toppingCost = function () {
   }
 }
 
-const myPizza = new Pizza("medium", ["anchovies"]);
+//User Interface Logic
+
+$(document).ready(function () {
+  $("#pizza").submit(function (e) {
+    e.preventDefault();
+    const inputtedSize = $("select#size").val();
+    const inputtedTopping = $("checkbox.topping");
+  })
+})
