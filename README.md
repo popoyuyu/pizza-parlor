@@ -58,13 +58,23 @@ Copyright (c) _November 5th 2021_ _Jeff Lai_
 
 #### Describe: Pizza()
 
-* _Tests: "It should return a Pizza object with two properties for size and toppings"_
+*_Tests: "It should return a Pizza object with two properties for size and toppings"_
 *_Code: const myPizza = new Pizza ("medium", ["anchovies", "pineapple"]);_
+      *_myPizza;_
 *_Expected Ouput: Pizza { size: "medium", toppings: ["anchovies", "pineapple"] }_
 
 #### Describe: Pizza.prototype.sizeCost
+
 *_Tests: "It should return the cost of $10 for small, $12 for medium, or $15 for large_
 *_Code: const myPizza = new Pizza ("medium", ["anchovies"]);_
-        *_myPizza.sizeCost();_
-        *_myPizza;_
+      *_myPizza.sizeCost();_
+      *_myPizza;_
 *_Expected Output: Pizza { size: "medium", toppings: ["anchovies"] price:12}_
+
+#### Describe: Pizza.prototype.toppingCost
+
+*_Tests: "It should add $1 to the cost when any toppings are added"_
+*_Code: const myPizza = new Pizza ("medium", ["anchovies"]);_
+      *_myPizza.toppingCost();_
+      *_myPizza;_
+*_Expected Output: Pizza { size: "medium", toppings: ["anchovies" price :1]}_
