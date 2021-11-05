@@ -54,10 +54,17 @@ SOFTWARE._
 Copyright (c) _November 5th 2021_ _Jeff Lai_
 
 
-## Specs
+## TDD
 
 #### Describe: Pizza()
 
-* _Tests: "It should return a Pizza object with two properties for toppings and size"_
-*_Code: const myPizza = new Pizza (["anchovies", "pineapple"], "medium");_
-*_Expected Ouput: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }_
+* _Tests: "It should return a Pizza object with two properties for size and toppings"_
+*_Code: const myPizza = new Pizza ("medium", ["anchovies", "pineapple"]);_
+*_Expected Ouput: Pizza { size: "medium", toppings: ["anchovies", "pineapple"] }_
+
+#### Describe: Pizza.prototype.sizeCost
+*_Tests: "It should return the cost of $10 for small, $12 for medium, or $15 for large_
+*_Code: const myPizza = new Pizza ("medium", ["anchovies"]);_
+        *_pizza.sizeCost();_
+        *_pizza;_
+*_Expected Output: Pizza { size: "medium", toppings: ["anchovies"] cost:10}_
