@@ -5,11 +5,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js""></script>
   <title>Pizza Parlor</title>
 </head>
 
 <body>
-
+  <div class=" container">
+    <div class="jumbotron">
+      <h1>WELCOME TO JEFFS PIZZA PARLOR</h1>
+      <p>HAND PICKED INGREDIENTS. HAND TOSSED DOUGH. HAND CRAFTED MENU.</p>
+    </div>
+    <form id="pizza">
+      <div class="form-group">
+        <label for="size">SELECT YOUR SIZE</label>
+        <select name="size" id="size" class="form-control">
+          <option value="small">Small</option>
+          <option value="medium" selected>Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <p>SELECT YOUR TOPPINGS</p>
+      <div>
+        <input type="checkbox" id="anchovy" name="anchovy">
+        <label for="anchovy">Anchovy</label>
+      </div>
+      <div>
+        <input type="checkbox" id="pineapple" name="pineapple">
+        <label for="pineapple">Pineapple</label>
+      </div>
+      <div>
+        <input type="checkbox" id="pepperoni" name="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+      </div>
+      <div>
+        <input type="checkbox" id="cheese" name="cheese">
+        <label for="cheese">Cheese</label>
+      </div>
+      <button type="submit">PLACE YOUR ORDER</button>
+    </form>
+  </div>
 </body>
 
 </html>
