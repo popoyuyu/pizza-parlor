@@ -28,7 +28,11 @@ $(document).ready(function () {
   $("#pizza").submit(function (e) {
     e.preventDefault();
     const inputtedSize = $("select#size").val();
-    const inputtedTopping = $("checkbox.topping");
+    const inputtedTopping = $(".topping:checked");
+    $(".topping").each(function (i, obj) {
+
+
+    });
     let totalCost = this.sizeCost + this.toppingCost;
     let myPizza = new Pizza(inputtedSize, inputtedTopping, totalCost);
     myPizza.toppingCost();
