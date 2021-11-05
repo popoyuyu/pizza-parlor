@@ -15,14 +15,14 @@
 
 ## Description
 
-_This browser application allows users to see my accomplishments and projects as a developer!_
+_This browser application allows users to purchase a pizza. The cost will be based on the size of the pizza and the amount of toppings added._
 
 ## Setup/Installation Requirements
 
-* _Clone this repository to your desktop._
-* _Navigate to the top level of directory._
+* _Open terminal and enter "https://github.com/popoyuyu/pizza-parlor"._
+* _Next, enter "cd pizza-parlor" to navigate into project directory._
 * _Open index.html in your browser._
-* _Site may also be viewed on GitHub Pages at popoyuyu.github.io/portfolio-landing-page_
+* _Enter "code." to open project file in VSCode._
 
 
 
