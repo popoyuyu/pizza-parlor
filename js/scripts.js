@@ -13,5 +13,12 @@ Pizza.prototype.sizeCost = function () {
   } else if (this.size === "large") {
     this.price += 15;
   }
-};
-const myPizza = new Pizza("medium", ["anchovies"], Pizza.sizeCost());
+}
+
+Pizza.prototype.toppingCost = function () {
+  for (let i = 0; i < this.length; i++) {
+    this.price += 1;
+  }
+}
+
+const myPizza = new Pizza("medium", ["anchovies"]);
