@@ -13,5 +13,5 @@ Pizza.prototype.sizeCost = function () {
   } else if (this.size === "large") {
     this.price += 15;
   }
-}
-const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
+};
+const myPizza = new Pizza("medium", ["anchovies"], Pizza.sizeCost());

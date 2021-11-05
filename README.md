@@ -65,6 +65,6 @@ Copyright (c) _November 5th 2021_ _Jeff Lai_
 #### Describe: Pizza.prototype.sizeCost
 *_Tests: "It should return the cost of $10 for small, $12 for medium, or $15 for large_
 *_Code: const myPizza = new Pizza ("medium", ["anchovies"]);_
-        *_pizza.sizeCost();_
-        *_pizza;_
-*_Expected Output: Pizza { size: "medium", toppings: ["anchovies"] cost:10}_
+        *_myPizza.sizeCost();_
+        *_myPizza;_
+*_Expected Output: Pizza { size: "medium", toppings: ["anchovies"] price:12}_
