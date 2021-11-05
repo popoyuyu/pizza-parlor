@@ -51,4 +51,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE._
 
 
-Copyright (c) _October 15th 2021_ _Jeff Lai_
+Copyright (c) _November 5th 2021_ _Jeff Lai_
+
+
+## Specs
+
+#### Describe: Pizza()
+
+* _Tests: "It should return a Pizza object with two properties for toppings and size"_
+*_Code: const myPizza = new Pizza (["anchovies", "pineapple"], "medium");_
+*_Expected Ouput: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }_
